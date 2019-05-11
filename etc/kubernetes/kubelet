@@ -1,0 +1,11 @@
+
+KUBELET_ADDRESS="--address=192.168.50.116"
+KUBELET_HOSTNAME="--hostname-override=192.168.50.116"
+#KUBELET_HOSTNAME="--hostname-override=zubuntu"
+KUBELET_PORT="--port=10250"
+KUBELET_API_SERVER="--api-servers=http://192.168.50.116:8080"
+#KUBELET_API_SERVER="--api-servers=http://192.168.50.239:9080"
+# pod infrastructure container
+#KUBELET_POD_INFRA_CONTAINER="--pod-infra-container-image=registry.access.redhat.com/rhel7/pod-infrastructure:latest"
+KUBELET_POD_INFRA_CONTAINER="--pod-infra-container-image=registry.cn-hangzhou.aliyuncs.com/sunyuki/pod-infrastructure:latest"
+KUBELET_ARGS="--kubeconfig=/etc/kubernetes/kubelet.kubeconfig --cluster-dns=172.17.0.2 --cluster-domain=cluster.local --enable-server=true --enable-debugging-handlers=true --fail-swap-on=false --serialize-image-pulls=false --cert-dir=/etc/kubernetes/ssl --experimental-bootstrap-kubeconfig=/etc/kubernetes/bootstrap.kubeconfig"

@@ -1,0 +1,7 @@
+KUBE_LOGTOSTDERR="--logtostderr=true"
+KUBE_LOG_LEVEL="--v=0"
+KUBE_ALLOW_PRIV="--allow-privileged=false"
+#KUBE_MASTER="--master=http://192.168.50.239:9080"
+#KUBE_MASTER="--master=https://192.168.50.116:6443"
+KUBE_MASTER="--master=http://192.168.50.116:8080"
+

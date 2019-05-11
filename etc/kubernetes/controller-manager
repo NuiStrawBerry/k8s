@@ -1,0 +1,5 @@
+#KUBE_CONTROLLER_MANAGER_ARGS="--service_account_private_key_file=/var/run/kubernetes/apiserver.key"
+#KUBE_CONTROLLER_MANAGER_ARGS="--root-ca-file=/etc/kubernetes/ssl/ca.pem"
+KUBE_CONTROLLER_MANAGER_ARGS="--address=127.0.0.1 --service-account-private-key-file=/etc/kubernetes/ssl/ca-key.pem --root-ca-file=/etc/kubernetes/ssl/ca.pem --leader-elect=true --cluster-name=k8s --cluster-signing-cert-file=/etc/kubernetes/ssl/ca.pem --cluster-signing-key-file=/etc/kubernetes/ssl/ca-key.pem --service-cluster-ip-range=172.17.0.0/16"
+
+
